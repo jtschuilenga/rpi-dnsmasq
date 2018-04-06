@@ -1,5 +1,5 @@
 # rpi-dnsmasq
-DNSMASQ, DHCP and DNS server for Raspberry
+Docker file for DNSMASQ, DHCP and DNS server for Raspberry
 
 # dnsmasq
 
