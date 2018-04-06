@@ -12,7 +12,7 @@ Provided here is a minimal [docker](https://www.docker.com/) image for raspberry
 Starting a container from this image is simple. We run it directly on the host's network stack so the host can act as a DNS for other services in the network.
 
 ```
-docker run --name dnsmasq --cap-add=NET_ADMIN --net=host -restart:always -v /etc/dnsmasq:/etc/dnsmasq jtschuilenga/rpi-dnsmasq
+docker run --name dnsmasq --cap-add=NET_ADMIN --net=host --restart always -v /etc/dnsmasq:/etc/dnsmasq jtschuilenga/rpi-dnsmasq
 ```
 
 We can then add multiple `.conf` files to the `/etc/dnsmasq` folder to provide layered configuration. This layering is useful to allow multiple services to add their own configuration files.
